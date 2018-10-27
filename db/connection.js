@@ -4,7 +4,7 @@ var connection;
 
 // Sets up db to connect locally or on JAWSDB if deployed
 if (process.env.JAWSDB_URL) {
-  connection = mysql.createConnection(process.env.JAWSDB_URL);
+  connection = mysql.createConnection(process.env.JAWSDB_URL);   //On Heroku DB Name: nz0h7glf96d34h5o
 } else {
   connection = mysql.createConnection({
     host: "localhost",
