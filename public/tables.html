@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Restaurant Scheduler</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/assets/js/tables.js"></script>
+	<link rel="stylesheet" href="assets/css/tables.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="header-panel">
+                    <h1><span class="fa fa-fire"></span> Some Restaurant</h1><hr>
+                    <h2>Current Reservations and Waiting List</h2>
+                    <div id="btn-group" class="text-center">
+                        <a href="/reserve"><button class="btn btn-lg btn-danger"><span class="fa fa-credit-card"></span> Make Reservation</button></a>
+                        <a href="/index"><button class="btn btn-lg btn-default"><span class="fa fa-home"></span></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="margin-top-40 col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4>Current Reservations</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="table-records"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4>Waiting List</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="reserve-records"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
